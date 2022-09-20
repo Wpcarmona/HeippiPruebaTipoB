@@ -1,0 +1,78 @@
+#backbtn {
+  background-color: white;
+  border: 0px none;
+  color: rgb(0, 93, 82);
+  margin-top: 20px;
+  margin-left: 16px;
+}
+#card {
+  background-color: rgb(238, 246, 230);
+  height: 90px;
+}
+#box {
+  display: flex;
+  justify-content: space-between;
+}
+
+#space {
+  width: 100px;
+  height: 15px;
+}
+#space2 {
+  width: 100px;
+  height: 10px;
+}
+
+#cardM {
+  color: rgb(123, 187, 75);
+}
+
+#card-subtitle {
+  font-weight: bold;
+  font-size: 15px;
+}
+#positionImg {
+  position: absolute;
+  right: 60px;
+}
+
+#positionText {
+  position: absolute;
+  left: 40px;
+}
+
+#subCard-Title {
+  font-size: 13px;
+}
+
+#subCard-SubTitle {
+  font-size: 13px;
+  color: rgb(202, 202, 202);
+}
+
+#title {
+  font-size: 25px;
+  font-weight: bold;
+}
+#subtitle {
+  font-size: 15px;
+  color: rgb(202, 202, 202);
+}
+
+#boxCard {
+  width: 60px;
+  height: 65px;
+  background-color: rgb(123, 187, 75);
+  border-radius: 10px;
+  text-align: center;
+  color: white;
+}
+
+#number {
+  font-size: 30px;
+}
+
+#pagra {
+  font-size: 10px;
+  margin-left: 15px;
+}

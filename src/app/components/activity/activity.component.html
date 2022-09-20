@@ -1,0 +1,72 @@
+<header>
+  <button id="backbtn" (click)="backButton()">
+    <i class="fa-solid fa-arrow-left fa-2xl"></i>
+  </button>
+</header>
+<body class="contentBody">
+  <div class="center">
+    <label id="title"> Mi actividad </label>
+  </div>
+  <br />
+  <div class="center">
+    <label id="subtitle">
+      Muevete todos los dias para cumplir plantar mas árboles!
+    </label>
+  </div>
+  <div>
+    <div>
+      <canvas #myCanvas width="100%" height="100"></canvas>
+    </div>
+  </div>
+  <div id="space"></div>
+  <div>
+    <div id="card" class="primary-card">
+      <div id="space"></div>
+      <div class="displayFlex">
+        <div id="positionText">
+          <div class="displayFlex">
+            <div id="boxCard">
+              <div style="margin-top: 5px">sep</div>
+              <div id="number">
+                <label> 15 </label>
+              </div>
+            </div>
+            <div style="margin-top: 10px; margin-left: 10px">
+              <div id="subCard-Title">
+                <label> Dia de mas pasos </label>
+              </div>
+              <div id="space2"></div>
+              <div id="subCard-SubTitle">
+                <label>Martes</label>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="positionImg">
+          <div style="margin-top: 20px">
+            <label id="cardM"> 6 kms </label>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <br />
+  <div class="center">
+    <div id="box">
+      <div style="width: 40px; height: 20px"></div>
+      <div class="displayFlex">
+        <img src="../../../assets/walking-solid 1.svg" />
+        <div>
+          <label id="pagra"> Caminando </label>
+        </div>
+      </div>
+      <div class="displayFlex">
+        <img src="../../../assets/biking-solid 1.svg" />
+        <div>
+          <label id="pagra"> Ciclismo </label>
+        </div>
+      </div>
+      <div style="width: 40px; height: 20px"></div>
+    </div>
+  </div>
+</body>

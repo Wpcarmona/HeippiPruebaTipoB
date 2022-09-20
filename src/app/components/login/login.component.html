@@ -1,0 +1,90 @@
+<div class="background">
+  <header>
+    <button id="backbtn" (click)="backButton()">
+      <i class="fa-solid fa-arrow-left fa-2xl"></i>
+    </button>
+    <br /><br /><br />
+    <div class="center">
+      <img src="../../../assets/Imagen - Inicio de sesión.png" alt="" />
+    </div>
+  </header>
+  <body>
+    <br />
+    <div class="center">
+      <div class="title">
+        <label> Inicia sesión en <a class="wieght">TreeWo</a> </label>
+      </div>
+    </div>
+    <br />
+    <div class="center contentPadding">
+      <div class="formulario">
+        <br />
+        <form [formGroup]="ValidationFormUSer">
+          <p class="cardInput">
+            <input
+              formControlName="email"
+              type="email"
+              name="introducir_email"
+              id="email"
+              required="obligatorio"
+              placeholder="Escribe tu Email"
+            />
+          </p>
+          <ng-container *ngFor="let validation of validationMessages.email">
+            <div
+              class="error_message"
+              *ngIf="
+                ValidationFormUSer.get('email')!.hasError(validation.type) &&
+                (ValidationFormUSer.get('email')!.dirty ||
+                  ValidationFormUSer.get('email')!.touched)
+              "
+            >
+              {{ validation.message }}
+            </div>
+          </ng-container>
+
+          <p class="cardInput">
+            <input
+              formControlName="password"
+              type="password"
+              name="introducir_website"
+              id="website"
+              required="obligatorio"
+              placeholder="Escribe la contraseña"
+            />
+          </p>
+          <ng-container *ngFor="let validation of validationMessages.password">
+            <div
+              class="error_message"
+              *ngIf="
+                ValidationFormUSer.get('password')!.hasError(validation.type) &&
+                (ValidationFormUSer.get('password')!.dirty ||
+                  ValidationFormUSer.get('password')!.touched)
+              "
+            >
+              {{ validation.message }}
+            </div>
+          </ng-container>
+          <div></div>
+        </form>
+      </div>
+    </div>
+    <div
+      class="error_message"
+      id="error"
+      style="visibility: hidden; text-align: center"
+    >
+      <label> El correo no exite o esta mal escrito </label>
+    </div>
+    <br /><br /><br />
+    <div class="center">
+      <button
+        class="btn btn-primary"
+        (click)="login()"
+        [disabled]="!ValidationFormUSer.valid"
+      >
+        <label> Iniciar sesión </label>
+      </button>
+    </div>
+  </body>
+</div>

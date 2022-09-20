@@ -1,0 +1,90 @@
+#subtitle {
+  color: rgb(197, 198, 194);
+  font-size: 24px;
+}
+
+a {
+  text-decoration: none;
+  color: rgb(122, 187, 74);
+  font-weight: bold;
+}
+
+#space {
+  height: 80px;
+}
+
+.content {
+  position: absolute;
+  bottom: 0px;
+  height: 0px;
+  width: 360px;
+  border-radius: 20px 20px 0 0;
+  background-color: white;
+  animation-name: up;
+  animation-duration: 2s;
+}
+
+.sContent {
+  width: 100%;
+  height: 10px;
+  text-align: center;
+  align-items: center;
+}
+.contentBox {
+  width: 50px;
+  height: 5px;
+  border-radius: 5px;
+  background-color: grey;
+  align-items: center;
+  position: absolute;
+  left: 45%;
+}
+
+.opacitybtn1 {
+  width: 100%;
+  height: 35px;
+  border-radius: 25px;
+  background-color: rgb(122, 187, 74);
+  text-align: center;
+  align-items: center;
+  color: white;
+  align-content: center;
+  align-self: center;
+}
+
+.center {
+  margin-top: 8px;
+  width: 100%;
+  text-align: center;
+  align-items: center;
+}
+
+.margins {
+  margin-left: 16px;
+  margin-right: 16px;
+}
+
+.elementhidden {
+  visibility: hidden;
+}
+
+@keyframes up {
+  0% {
+    max-height: 0px;
+  }
+
+  100% {
+    max-height: 40%;
+  }
+}
+
+.backRegister {
+  background-color: whitesmoke;
+  padding: 4px;
+  align-items: center;
+  text-align: center;
+}
+
+button:disabled {
+  background-color: #65686f;
+}

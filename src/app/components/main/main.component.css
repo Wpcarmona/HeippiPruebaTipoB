@@ -1,0 +1,102 @@
+#card-title {
+  color: rgb(123, 187, 73);
+}
+
+#mBotton {
+  margin-bottom: 10px;
+}
+
+#card-subtitle {
+  font-weight: bold;
+  font-size: 15px;
+}
+
+#positionImg {
+  position: absolute;
+  right: 60px;
+}
+
+#positionText {
+  position: absolute;
+  left: 60px;
+}
+
+#space {
+  width: 100px;
+  height: 15px;
+}
+
+#subCard-Title {
+  font-weight: bold;
+  font-size: 12px;
+}
+
+#subCard-SubTitle {
+  font-weight: bold;
+  font-size: 12px;
+  color: rgb(202, 202, 202);
+}
+
+#title {
+  font-size: 28px;
+  font-weight: bold;
+  margin-left: 20px;
+}
+
+#space2 {
+  width: 100px;
+  height: 50px;
+}
+
+#sTitle {
+  font-size: 26px;
+}
+
+a {
+  color: rgb(123, 187, 73);
+}
+
+#box {
+  display: flex;
+  justify-content: space-between;
+}
+
+#pagra {
+  font-size: 10px;
+  margin-left: 15px;
+}
+
+.amarillo {
+  color: gold;
+}
+
+.silver {
+  color: silver;
+}
+
+.bronce {
+  color: #b1674d;
+}
+
+#dona {
+  font-size: 40px;
+  z-index: 3;
+  font-weight: bold;
+  position: absolute;
+  left: 46%;
+  top: 270px;
+}
+
+#dona2 {
+  font-size: 15px;
+  z-index: 3;
+  position: absolute;
+  left: 42%;
+  top: 320px;
+  align-items: center;
+}
+
+#btnLog {
+  position: absolute;
+  right: 16px;
+}

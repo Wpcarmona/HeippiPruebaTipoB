@@ -1,0 +1,122 @@
+<header>
+  <div id="space2"></div>
+  <div class="displayFlex">
+    <div>
+      <label id="title"> Hola, Usuario! </label>
+    </div>
+    <div id="btnLog" (click)="logout()">
+      <i
+        class="fa-solid fa-right-from-bracket fa-xl"
+        style="margin-top: 18px; color: red"
+      ></i>
+    </div>
+  </div>
+</header>
+
+<body class="contentBody">
+  <div class="center">
+    <label id="sTitle"> Has dado <a>{{contadorPasos}}</a> pasos el dia de hoy </label>
+  </div>
+  <div>
+    <div id="dona">
+      <label>
+        {{ contadorArbol }}
+      </label>
+    </div>
+    <div id="dona2">
+      <label>
+        Arboles
+        <br />
+        plantados
+      </label>
+    </div>
+    <canvas #myCanvas width="100%" height="100"></canvas>
+  </div>
+  <br />
+
+  <div class="center">
+    <div id="box">
+      <div style="width: 40px; height: 20px"></div>
+      <div class="displayFlex" (click)="goToActivity()">
+        <img src="../../../assets/walking-solid 1.svg" />
+        <div>
+          <label id="pagra"> Caminando </label>
+        </div>
+      </div>
+      <div class="displayFlex">
+        <img src="../../../assets/biking-solid 1.svg" />
+        <div>
+          <label id="pagra"> Ciclismo </label>
+        </div>
+      </div>
+      <div style="width: 40px; height: 20px"></div>
+    </div>
+  </div>
+  <br />
+  <div>
+    <div class="second-card">
+      <div id="mBotton">
+        <label id="card-title"> Tabla de clasificación </label>
+      </div>
+      <div id="card-subtitle">Top de grupos con mas árbol plantados</div>
+      <br />
+      <div class="primary-card">
+        <div id="space"></div>
+        <div class="displayFlex">
+          <div id="positionText">
+            <div id="subCard-Title">
+              <label> Mejores de Bogotá </label>
+            </div>
+            <div id="subCard-SubTitle">
+              <label>14 Árboles</label>
+            </div>
+          </div>
+          <div id="positionImg">
+            <i
+              class="fa-solid fa-medal fa-2xl amarillo"
+              style="margin-top: 16px"
+            ></i>
+          </div>
+        </div>
+      </div>
+      <div class="primary-card">
+        <div id="space"></div>
+        <div class="displayFlex">
+          <div id="positionText">
+            <div id="subCard-Title">
+              <label> Salvando el planeta </label>
+            </div>
+            <div id="subCard-SubTitle">
+              <label>11 Árboles</label>
+            </div>
+          </div>
+          <div id="positionImg">
+            <i
+              class="fa-solid fa-medal fa-2xl silver"
+              style="margin-top: 16px"
+            ></i>
+          </div>
+        </div>
+      </div>
+      <div class="primary-card">
+        <div id="space"></div>
+        <div class="displayFlex">
+          <div id="positionText">
+            <div id="subCard-Title">
+              <label> Super Heroes </label>
+            </div>
+            <div id="subCard-SubTitle">
+              <label>7 Árboles</label>
+            </div>
+          </div>
+          <div id="positionImg">
+            <i
+              class="fa-solid fa-medal fa-2xl bronce"
+              style="margin-top: 16px"
+            ></i>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>

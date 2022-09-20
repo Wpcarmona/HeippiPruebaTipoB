@@ -1,0 +1,122 @@
+<div class="background">
+  <header class="center">
+    <div id="space"></div>
+    <img src="../../../assets/Treewo Icon.png" />
+  </header>
+  <body>
+    <div class="center">
+      <div class="title">
+        <label> Bienvenido a <a class="wieght">TreeWo</a> </label>
+      </div>
+      <br />
+      <div id="subtitle">
+        <label> Sembrado esperanzas para el planeta </label>
+      </div>
+    </div>
+    <div class="center">
+      <img src="../../../assets/Imagen - bienvenida.png" alt="" />
+    </div>
+    <br /><br />
+    <div class="center">
+      <button class="btn btn-primary" (click)="login()">
+        <label> Comenzar </label>
+      </button>
+    </div>
+    <br /><br />
+    <div class="center">
+      <label>
+        no tienes cuenta? <a href="tryit.asp" (click)="subir()"> Registrate </a>
+      </label>
+    </div>
+    <div class="content" id="up">
+      <div class="position-form">
+        <div class="backRegister">
+          <div class="formulario">
+            <br />
+            <div class="sContent" (click)="bajar()">
+              <div class="contentBox"></div>
+            </div>
+            <div>
+              <h1>Formulario de Registro</h1>
+            </div>
+            <form [formGroup]="ValidationFormUSer">
+              <p>
+                <label for="email" class="colocar">Correo </label>
+                <input
+                  formControlName="email"
+                  type="email"
+                  name="introducir_email"
+                  id="email"
+                  required="obligatorio"
+                  placeholder="Escribe tu Email"
+                />
+              </p>
+              <ng-container *ngFor="let validation of validationMessages.email">
+                <div
+                  class="error_message"
+                  *ngIf="
+                    ValidationFormUSer.get('email')!.hasError(
+                      validation.type
+                    ) &&
+                    (ValidationFormUSer.get('email')!.dirty ||
+                      ValidationFormUSer.get('email')!.touched)
+                  "
+                >
+                  {{ validation.message }}
+                </div>
+              </ng-container>
+              <p>
+                <label for="website" class="colocar">Contraseña </label>
+                <input
+                  formControlName="password"
+                  type="password"
+                  name="introducir_website"
+                  id="website"
+                  required="obligatorio"
+                  placeholder="Escribe la contraseña"
+                />
+              </p>
+              <ng-container
+                *ngFor="let validation of validationMessages.password"
+              >
+                <div
+                  class="error_message"
+                  *ngIf="
+                    ValidationFormUSer.get('password')!.hasError(
+                      validation.type
+                    ) &&
+                    (ValidationFormUSer.get('password')!.dirty ||
+                      ValidationFormUSer.get('password')!.touched)
+                  "
+                >
+                  {{ validation.message }}
+                </div>
+              </ng-container>
+              <div></div>
+            </form>
+          </div>
+          <div
+            class="error_message"
+            id="error"
+            style="visibility: hidden; text-align: center"
+          >
+            <label>
+              Lo sentimos no pudimos crear tu cuenta, intenta mas tarde
+            </label>
+          </div>
+          <br />
+          <div class="center">
+            <button
+              class="btn btn-primary"
+              (click)="createAccount()"
+              [disabled]="!ValidationFormUSer.valid"
+            >
+              <label> Registrarse </label>
+            </button>
+          </div>
+          <br />
+        </div>
+      </div>
+    </div>
+  </body>
+</div>

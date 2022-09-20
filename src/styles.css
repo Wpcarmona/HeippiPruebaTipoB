@@ -1,0 +1,268 @@
+*{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.card{
+    background-color: white;
+    border-radius: 10px;
+    width: 300px;
+    padding: 16px;
+}
+
+.divCard{
+    padding: 16px;
+}
+.second-card{
+    background-color: rgb(245, 245, 245);
+    padding: 16px;
+    width: stretch;
+    border-radius: 10px;
+}
+
+.primary-card{
+    background-color: white;
+    border-radius: 10px;
+    width: 100%;
+    height: 60px;
+    margin-bottom: 10px;
+}
+
+.btn{
+    border-radius: 10px;
+    width: 250px;
+    height: 55px;
+    color: white;
+    text-align: center;
+    
+}
+
+.btn-primary{
+    background-color: rgb(122, 187, 74);
+    border: 0px none ;
+    font-size:  16px;
+}
+
+.background{
+    background-color: rgb(238,247,230);
+    width: 100%;
+    height: 100vh;
+}
+
+.center{
+    text-align: center;
+    align-items: center;
+    width: 100%;
+}
+
+.title{
+    font-weight: bold;
+    font-size: 25px;
+ }
+ 
+.wieght{
+     color: rgb(122,187,74);
+ }
+
+ .inputs{
+    display: flex;
+ }
+
+ .contentPadding{
+ 
+    padding-right: 16px;
+}
+
+.contentBody{
+    padding-left: 8px;
+    padding-right: 8px;
+}
+
+.displayFlex{
+    display: flex;
+}
+
+.form{
+    opacity: 0;
+  }
+  
+  div[scrollx=true],div[scrolly=true] {
+    position: relative;
+    overflow: hidden;
+  }
+  
+  div[scrollx=true] {
+   overflow-x: auto;
+  }
+  
+  div[scrolly=true] {
+   overflow-y: auto;
+  }
+  
+  .btn-x{
+    opacity: 0;
+  }
+  
+  
+  .css-square {
+    position: absolute;
+    right: 24px;
+    -webkit-transition: -webkit-transform .8s ease-in-out;
+    -ms-transition: -ms-transform .8s ease-in-out;
+    transition: transform .8s ease-in-out;  
+  }
+  
+  .header{
+    position: absolute;
+    top: 20px;
+    width: fill;
+    height: 80px;
+    margin-left: 16px;
+    margin-right: 16px;
+    background-color: white;
+    box-shadow: 0px 3px 12px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+  }
+  
+  .subcontainer{
+    position: absolute;
+    top: 75px;
+    width: fill;
+    height: 0px;
+    margin-left: 16px;
+    margin-right: 16px;
+    background-color: white;
+    border-radius: 0px 0px 5px 5px;
+    z-index: -1;
+  }
+  
+  .panel {
+    padding: 0 18px;
+    padding-top: 25px;
+    background-color: white;
+    overflow: hidden;
+    z-index: -1;
+    opacity: 0;
+  }
+  
+  .contact_form{	
+      width: fill; 
+    height: auto;
+    margin: 80px auto;
+      border-radius: 10px;  
+      padding-top: 30px;
+      padding-bottom: 20px;  
+    background-color: #fbfbfb; 
+    padding-left: 30px; 
+    padding-right: 30px; 
+    overflow-y: scroll;
+  }
+  
+  
+ 
+  
+  
+  textarea{
+    background-color: #fbfbfb; 
+      width: fill; 
+      height: 150px; 
+      border-radius: 5px;  
+      border-style: solid; 
+      border-width: 1px; 
+      border-color: rgb(122,187,74); 
+      margin-top: 10px;  
+      padding-left: 10px;
+    margin-bottom: 20px; 
+    padding-top: 15px; 
+  }
+  
+  
+  label{
+    display: block; 
+      float: center; 	
+  }
+  
+ 
+  span{
+      color: rgb(122,187,74); 
+  }
+  
+  
+  .aviso{
+      font-size: 13px;  
+      color: #0e0e0e;  
+  }
+  
+  
+  h1{
+      font-size: 25px;  
+      text-align: letf; 
+      padding-bottom: 20px; 
+      color: rgb(122,187,74);
+  }
+  
+  
+  h3{
+      font-size: 16px; 
+      padding-bottom: 30px;
+      color: #0e0e0e;   
+  }
+  
+  
+  p{
+      font-size: 14px; 
+      color: #0e0e0e; 
+  }
+  
+  
+  ::-webkit-input-placeholder {
+   color: #a8a8a8;
+  }
+  
+  
+  ::-webkit-textarea-placeholder {
+   color: #a8a8a8;
+  }
+  
+  
+  .formulario input:focus{
+      outline:0;
+      border: 1px solid #97d848;
+    overflow-y: scroll;
+  }
+  
+  
+  .formulario textarea:focus{
+      outline:0;
+      border: 1px solid #97d848;
+    overflow-y: scroll;
+  }
+
+  .error_message{
+    font-size: 12px;
+    font-weight:bold;
+    color: red;
+  }
+
+
+  input{
+    width: 305px;
+    height: 50px;
+    border-radius: 10px;
+    border: 0px none;
+    text-align: center;
+    
+}
+
+.colocar{
+    text-align: left;
+    margin-left: 24px;
+    margin-bottom: 8px;
+}
+
+
+
+input::placeholder{
+   color: rgb(202,202,202);
+   font-size: 16px;
+    
+}
